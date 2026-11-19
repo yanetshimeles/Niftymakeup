@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Nifty Makeup</h1>
+        <p>Enhancing Your Natural Beauty, One Look at a Time.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Book Your Appointment</h2>
+            <p>
+                Ready for your perfect look? Fill out the form below
+                to request your makeup appointment with Nifty Makeup.
+            </p>
+            <form action="/booking" method="post">
+                <h3>Personal Information</h3>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                    placeholder="Enter your phone number" required>
+                <br><br>
+                <h3>Appointment Details</h3>
+                <label for="service">Choose Makeup Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="natural">Natural Makeup</option>
+                    <option value="soft-glam">Soft Glam Makeup</option>
+                    <option value="full-glam">Full Glam Makeup</option>
+                    <option value="bridal">Bridal Makeup</option>
+                    <option value="event">Event Makeup</option>
+                    <option value="photoshoot">Photoshoot Makeup</option>
+                </select>
+                <br><br>
+                <label for="date">Preferred Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people"
+                    min="1" required>
+                <br><br>
+                <h3>Makeup Preferences</h3>
+                <p>How would you describe your preferred makeup look?</p>
+                <input type="radio" id="natural-look"
+                    name="makeup-style" value="natural">
+                <label for="natural-look">Natural</label>
+                <input type="radio" id="defined-look"
+                    name="makeup-style" value="defined">
+                <label for="defined-look">Soft and Defined</label>
+                <input type="radio" id="dramatic-look"
+                    name="makeup-style" value="dramatic">
+                <label for="dramatic-look">Dramatic</label>
+                <br><br>
+                <label for="inspiration">Upload an Inspiration Picture:</label>
+                <input type="file" id="inspiration"
+                    name="inspiration" accept="image/*">
+                <br><br>
+                <label for="requests">Additional Requests:</label>
+                <br>
+                <textarea id="requests" name="requests"
+                    rows="5" cols="40"
+                    placeholder="Tell us about any special requests..."></textarea>
+                <br><br>
+                <button type="submit">Request Appointment</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                Have questions before booking? Feel free to contact us.
+            </p>
+        <p>
+    Email:
+    <a href="mailto:yanetshime@gmail.com">
+        <img src="./images/gmail.jpg"
+             alt="Email icon" width="20">
+        Contact Nifty Makeup
+    </a>
+</p>
+            <p>
+    Instagram:
+    <a href="https://www.instagram.com/yanet_shime/">
+        <img src="./images/instagram.jpg"
+             alt="Instagram logo" width="20">
+        Follow Nifty Makeup
+    </a>
+</p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 Nifty Makeup. All rights reserved.</p>
+    </footer>
+</body>
+</html>
